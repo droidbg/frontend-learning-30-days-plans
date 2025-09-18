@@ -1,12 +1,9 @@
 import { render } from "@testing-library/react";
 import React from "react";
 import { test, expect } from "vitest";
-
-function Button() {
-  return <button>Click Me</button>;
-}
+import { Button } from "../src/components/Button";
 
 test("button snapshot", () => {
-  const { container } = render(<Button />);
+  const { container } = render(<Button label="Click Me" />);
   expect(container).toMatchSnapshot();
 });
