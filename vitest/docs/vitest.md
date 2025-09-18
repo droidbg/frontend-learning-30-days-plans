@@ -324,19 +324,92 @@ test("renders greeting", () => {
 - `React/Vue` apps need this environment
 
 
+
+# Performance Benchmarking.
+
+🟦 What is Performance Benchmarking?
+
+👉 Unit tests check correctness (does it work?).
+👉 Benchmarks check performance (how fast is it?).
+
+Vitest includes `bench` and `describeBench` for this.
+They let you compare multiple implementations of the same thing.
+
+Example:  `sumMethods.bench.ts`
 ```ts
+import { bench, describe } from "vitest";
+
+// sum with for loop
+function sumLoop(arr: number[]) {
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) total += arr[i];
+  return total;
+}
+
+// sum with reduce
+function sumReduce(arr: number[]) {
+  return arr.reduce((a, b) => a + b, 0);
+}
+
+describe("Array Sum Performance", () => {
+  const data = Array.from({ length: 1_000_000 }, (_, i) => i);
+
+  bench("for loop sum", () => {
+    sumLoop(data);
+  });
+
+  bench("reduce sum", () => {
+    sumReduce(data);
+  });
+});
+
 ```
 
+###### 🔎 Explanation:
 
+- `bench("name", fn)` → runs the function many times and measures speed.
+
+- `describe("...", () => { ... })` groups benchmarks.
+
+You’ll get output like:
+
+
+```bash
+Array Sum Performance
+  for loop sum   1,234 ops/s
+  reduce sum       789 ops/s
+
+```
+###### 🟦 Why Use Benchmarks?
+
+- Optimize hot paths (code that runs a lot).
+
+- Compare different implementations.
+
+- Decide trade-offs: readability vs. speed
+
+
+#### Setup Performance Benchmarking
+Enable `bench` in Config (optional). By default, bench works out of the box, but it’s nice to separate test runs and bench runs.
+In `vitest.config.ts`
 ```ts
+import { defineConfig } from "vitest/config";
+
+export default defineConfig({
+  test: {
+    // default is fine.
+  },
+  benchmark: {
+    include: ["**/*.bench.ts"], // separate bench files
+  },
+});
+
 ```
 
-
-```ts
-```
-
-
-```ts
+#### Run benchmarks
+```bash
+npx vitest bench
+npx vitest run --bench
 ```
 
 
