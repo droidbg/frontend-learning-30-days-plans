@@ -76,13 +76,13 @@ This document outlines a structured 45-day learning plan for team skill developm
 #### 2. Git & Terminal (Advanced)
 
 - **Week 1 (Days 1-5)** - _1 hour daily_
-  - [ ] **Recommended Learning**:
-    - [ ] [Pro Git Book](https://git-scm.com/book) (Chapters 1-3, 3-4 hours)
-    - [ ] [Command Line Basics](https://www.learnenough.com/command-line-tutorial) (2-3 hours)
-  - [ ] Master 8-10 essential Git commands with practice
-  - [ ] Practice basic rebasing (3-5 scenarios from [Learn Git Branching](https://learngitbranching.js.org/))
-  - [ ] Learn terminal navigation essentials
-  - [ ] **Practice**: Git fundamentals with hands-on exercises
+  - [x] **Recommended Learning**:
+    - [x] [Pro Git Book](https://git-scm.com/book) (Chapters 1-3, 3-4 hours)
+    - [x] [Command Line Basics](https://www.learnenough.com/command-line-tutorial) (2-3 hours)
+  - [x] Master 8-10 essential Git commands with practice
+  - [x] Practice basic rebasing (3-5 scenarios from [Learn Git Branching](https://learngitbranching.js.org/))
+  - [x] Learn terminal navigation essentials
+  - [x] **Practice**: Git fundamentals with hands-on exercises
 - **Week 2 (Days 6-10)** - _1 hour daily_
   - [ ] **Intermediate Resources**:
     - [ ] [Git Branching Strategies](https://www.atlassian.com/git/tutorials/comparing-workflows) (2-3 hours)
@@ -182,8 +182,8 @@ This document outlines a structured 45-day learning plan for team skill developm
     - [x] [Mocking Strategies in Vitest](https://vitest.dev/guide/mocking.html) (4 hours)
   - [x] Create mock implementations for 5 modules (API clients, file system, external services)
   - [x] Setup test environments and configurations (jsdom, node, custom)
-  - [ ] Implement performance benchmarks using Vitest bench
-  - [ ] **Project**: Complex application testing with mocks
+  - [x] Implement performance benchmarks using Vitest bench
+  - [x] **Project**: Complex application testing with mocks
 
 #### 3. Jest
 
