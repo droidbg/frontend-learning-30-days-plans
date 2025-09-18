@@ -50,28 +50,28 @@ This document outlines a structured 45-day learning plan for team skill developm
 
 #### 🎯 Primary Skills (Start Here)
 
-#### 1. TypeScript
+#### 1. TypeScript [the-ts-files](https://github.com/droidbg/the-ts-files)
 
 - **Week 1 (Days 1-5)** - _1-2 hours daily_
-  - [ ] **Recommended Courses**:
-    - [ ] [TypeScript Handbook](https://www.typescriptlang.org/docs/) (Official - focus on basics, 3-4 hours)
-    - [ ] [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/) (Free - selected chapters, 2-3 hours)
-  - [ ] Build 1 small TypeScript project (Todo app or Calculator)
-  - [ ] Focus on basic types, interfaces, classes
-  - [ ] Practice type inference and assertions
+  - [x] **Recommended Courses**:
+    - [x] [TypeScript Handbook](https://www.typescriptlang.org/docs/) (Official - focus on basics, 3-4 hours)
+    - [x] [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/) (Free - selected chapters, 2-3 hours)
+  - [x] Build 1 small TypeScript project (Todo app or Calculator)
+  - [x] Focus on basic types, interfaces, classes
+  - [x] Practice type inference and assertions
 - **Week 2 (Days 6-10)** - _1-2 hours daily_
-  - [ ] **Advanced Learning**:
-    - [ ] [TypeScript Generics Basics](https://www.typescriptlang.org/docs/handbook/2/generics.html) (2-3 hours)
-    - [ ] Practice with utility types (2-3 hours)
-  - [ ] Convert 1 existing JavaScript project to TypeScript
-  - [ ] Complete 5-10 TypeScript coding challenges
-  - [ ] **Project**: Build a simple API client with proper typing
+  - [x] **Advanced Learning**:
+    - [x] [TypeScript Generics Basics](https://www.typescriptlang.org/docs/handbook/2/generics.html) (2-3 hours)
+    - [x] Practice with utility types (2-3 hours)
+  - [x] Convert 1 existing JavaScript project to TypeScript
+  - [x] Complete 5-10 TypeScript coding challenges
+  - [x] **Project**: Build a simple API client with proper typing
 - **Week 3 (Days 11-15)** - _1-2 hours daily_
-  - [ ] Build a TypeScript application with basic features
-  - [ ] Learn type definitions for common libraries
-  - [ ] **Final Project**: TypeScript competency demonstration
-    - [ ] Complete practical coding project
-    - [ ] Peer code review session
+  - [x] Build a TypeScript application with basic features
+  - [x] Learn type definitions for common libraries
+  - [x] **Final Project**: TypeScript competency demonstration
+    - [x] Complete practical coding project
+    - [x] Peer code review session
 
 #### 2. Git & Terminal (Advanced)
 
@@ -100,37 +100,37 @@ This document outlines a structured 45-day learning plan for team skill developm
 
 #### 📚 Secondary Skills (Preparation Phase)
 
-#### 1. Playwright (Primary Skill)
+#### 1. Playwright [the-playwand](https://github.com/droidbg/the-playwand)
 
 - **Week 1 (Days 1-5)** - _1-2 hours daily_
-  - [ ] **Recommended Learning**:
-    - [ ] [Playwright Official Documentation](https://playwright.dev/docs/intro) (4-5 hours)
-    - [ ] [Playwright Getting Started Guide](https://playwright.dev/docs/getting-started) (3-4 hours)
-  - [ ] Learn Playwright fundamentals and architecture
-  - [ ] Setup Playwright configuration for Chrome, Firefox, Safari
-  - [ ] Write 5-8 basic test cases (login, navigation, simple forms)
+  - [x] **Recommended Learning**:
+    - [x] [Playwright Official Documentation](https://playwright.dev/docs/intro) (4-5 hours)
+    - [x] [Playwright Getting Started Guide](https://playwright.dev/docs/getting-started) (3-4 hours)
+  - [x] Learn Playwright fundamentals and architecture
+  - [x] Setup Playwright configuration for Chrome, Firefox, Safari
+  - [x] Write 5-8 basic test cases (login, navigation, simple forms)
 - **Week 2 (Days 6-10)** - _1-2 hours daily_
-  - [ ] **Advanced Learning**:
-    - [ ] [Playwright Selectors Guide](https://playwright.dev/docs/selectors) (2-3 hours)
-    - [ ] [Playwright Best Practices](https://playwright.dev/docs/best-practices) (2-3 hours)
-  - [ ] Master selectors and locators
-  - [ ] Understand page interactions and assertions
-  - [ ] Create 8-10 more comprehensive test cases
+  - [x] **Advanced Learning**:
+    - [x] [Playwright Selectors Guide](https://playwright.dev/docs/selectors) (2-3 hours)
+    - [x] [Playwright Best Practices](https://playwright.dev/docs/best-practices) (2-3 hours)
+  - [x] Master selectors and locators
+  - [x] Understand page interactions and assertions
+  - [x] Create 8-10 more comprehensive test cases
 - **Week 3 (Days 11-15)** - _1-2 hours daily_
-  - [ ] Learn basic page object model concepts
-  - [ ] Setup test data management
-  - [ ] **Milestone**: Build test suite with 15+ test cases covering core functionality
+  - [x] Learn basic page object model concepts
+  - [x] Setup test data management
+  - [x] **Milestone**: Build test suite with 15+ test cases covering core functionality
 
-#### 2. Handlebars
+#### 2. Handlebars [handlebars-of-secrets](https://github.com/droidbg/handlebar-of-secrets)
 
 - **Days 10-15** - _30-45 minutes daily_
-  - [ ] **Recommended Learning**:
-    - [ ] [Handlebars.js Official Guide](https://handlebarsjs.com/guide/) (2-3 hours total)
-  - [ ] Setup 1 Handlebars project (Simple blog template or email template)
-  - [ ] Create 3 custom partials (header, footer, content)
-  - [ ] Implement 2 custom helpers (date formatter, conditional helper)
-  - [ ] **Project**:
-    - [ ] Build a basic templating system (Simple blog with dynamic content)
+  - [x] **Recommended Learning**:
+    - [x] [Handlebars.js Official Guide](https://handlebarsjs.com/guide/) (2-3 hours total)
+  - [x] Setup 1 Handlebars project (Simple blog template or email template)
+  - [x] Create 3 custom partials (header, footer, content)
+  - [x] Implement 2 custom helpers (date formatter, conditional helper)
+  - [x] **Project**:
+    - [x] Build a basic templating system (Simple blog with dynamic content)
     - [ ] Peer review focusing on template structure
 
 ---
@@ -168,14 +168,14 @@ This document outlines a structured 45-day learning plan for team skill developm
 #### 2. Vitest
 
 - **Week 1 (Days 16-20)**
-  - [ ] **Recommended Courses**:
-    - [ ] [Vitest Official Guide](https://vitest.dev/guide/) (5 hours)
-    - [ ] [Modern JavaScript Testing with Vitest](https://www.youtube.com/playlist?list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf) (YouTube series - 4 hours)
-    - [ ] [Testing JavaScript Applications](https://testingjavascript.com/) by Kent C. Dodds (relevant Vitest sections - 6 hours)
-  - [ ] Setup Vitest in 3 different project types (React, Node.js, Vue)
+  - [x] **Recommended Courses**:
+    - [x] [Vitest Official Guide](https://vitest.dev/guide/) (5 hours)
+    - [x] [Modern JavaScript Testing with Vitest](https://www.youtube.com/playlist?list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf) (YouTube series - 4 hours)
+    - [x] [Testing JavaScript Applications](https://testingjavascript.com/) by Kent C. Dodds (relevant Vitest sections - 6 hours)
+  - [x] Setup Vitest in 3 different project types (React, Node.js, Vue)
   - [ ] Write 25 unit tests with 95%+ coverage
-  - [ ] Implement snapshot testing for UI components
-  - [ ] **Project**: Create test suite for utility library with good coverage
+  - [x] Implement snapshot testing for UI components
+  - [x] **Project**: Create test suite for utility library with good coverage
 - **Week 2 (Days 21-25)**
   - [ ] **Advanced Resources**:
     - [ ] [Vitest Advanced Configuration](https://vitest.dev/config/) (3 hours)
