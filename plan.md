@@ -173,15 +173,15 @@ This document outlines a structured 45-day learning plan for team skill developm
     - [x] [Modern JavaScript Testing with Vitest](https://www.youtube.com/playlist?list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf) (YouTube series - 4 hours)
     - [x] [Testing JavaScript Applications](https://testingjavascript.com/) by Kent C. Dodds (relevant Vitest sections - 6 hours)
   - [x] Setup Vitest in 3 different project types (React, Node.js, Vue)
-  - [ ] Write 25 unit tests with 95%+ coverage
+  - [x] Write 25 unit tests with 95%+ coverage
   - [x] Implement snapshot testing for UI components
   - [x] **Project**: Create test suite for utility library with good coverage
 - **Week 2 (Days 21-25)**
-  - [ ] **Advanced Resources**:
-    - [ ] [Vitest Advanced Configuration](https://vitest.dev/config/) (3 hours)
-    - [ ] [Mocking Strategies in Vitest](https://vitest.dev/guide/mocking.html) (4 hours)
-  - [ ] Create mock implementations for 5 modules (API clients, file system, external services)
-  - [ ] Setup test environments and configurations (jsdom, node, custom)
+  - [x] **Advanced Resources**:
+    - [x] [Vitest Advanced Configuration](https://vitest.dev/config/) (3 hours)
+    - [x] [Mocking Strategies in Vitest](https://vitest.dev/guide/mocking.html) (4 hours)
+  - [x] Create mock implementations for 5 modules (API clients, file system, external services)
+  - [x] Setup test environments and configurations (jsdom, node, custom)
   - [ ] Implement performance benchmarks using Vitest bench
   - [ ] **Project**: Complex application testing with mocks
 
