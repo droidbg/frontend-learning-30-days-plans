@@ -1,14 +1,13 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import React from "react";
 import { test, expect, vi } from "vitest";
-import { Button } from "../src/components/Button";
+import { Button } from "../../src/components/Button";
  
 
 test("renders button", () => {
   render(<Button label="Click Me" />);
-  expect(screen.getByText("Click Me")).toBeInTheDocument();
+  expect(screen.getByText("Click Me")).toBeTruthy();
 });
-
 
 test("calls onClick", () => {
   const mockFn = vi.fn();
@@ -19,8 +18,7 @@ test("calls onClick", () => {
 
 test("disabled button", () => {
   render(<Button label="Nope" disabled />);
-  expect(screen.getByText("Nope")).toBeDisabled();
-});
+  expect(screen.getByText("Nope")).toHaveProperty("disabled", true);
+}); 
+ 
 
- 
- 
