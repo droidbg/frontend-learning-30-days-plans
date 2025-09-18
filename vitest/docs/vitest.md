@@ -412,19 +412,10 @@ npx vitest bench
 npx vitest run --bench
 ```
 
-
-```ts
+#### Run benchmarks with UI
+```bash
+npx vitest --ui
+npx vitest run --ui
 ```
 
-
-```ts
-```
-
-
-```ts
-```
-
-
-```ts
-```
 
