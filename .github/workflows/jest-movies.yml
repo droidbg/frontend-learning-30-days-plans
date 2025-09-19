@@ -4,11 +4,11 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'jest/projects/Movies/**'
+      - 'jest/projects/movie/**'
   pull_request:
     branches: [ main ]
     paths:
-      - 'jest/projects/Movies/**'
+      - 'jest/projects/movie/**'
 
 jobs:
   test-movies:
@@ -28,11 +28,11 @@ jobs:
       # Step 3: Install dependencies in Movies project
       - name: Install dependencies
         run: |
-          cd jest/projects/Movies
+          cd jest/projects/movie
           npm install
 
       # Step 4: Run Jest tests with coverage in Movies project
       - name: Run Jest Tests
         run: |
-          cd jest/projects/Movies
+          cd jest/projects/movie
           npm run test -- --coverage
