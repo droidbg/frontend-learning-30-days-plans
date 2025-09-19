@@ -221,3 +221,47 @@ test("custom matcher", () => {
 
 - `message: () => ${value} is not positive` → returns a message if value is not positive.
 
+
+
+### 📌 Continuous Testing with Watch Mode
+Jest has a built-in watch mode that re-runs tests when files change.
+i.e it can run tests continuously when you make changes.
+
+Run in watch mode:
+```bash
+npm test -- --watch
+  # or
+npx jest --watch
+ # or
+npm run test:watch
+```
+
+```bash
+#  Or  runs all tests on every change
+  # **`--watchAll`** → runs all tests on every change.
+npm test -- --watchAll
+ # or
+npx jest --watchAll
+ # or
+npm run test:watchAll
+```
+
+ ##### 📌 📌 Useful Watch Mode Options
+
+
+ When you run jest --watch, Jest shows an interactive menu:
+
+- **o** → run tests related to changed files
+
+- **p** → filter tests by filename regex
+
+- **t** → filter tests by test name
+
+- **a** → run all tests
+
+- **q** → quit
+
+###### 👉 Example:
+If you type **`t addMovie`**, Jest will run only tests with "addMovie" in the name.
+
+ 
