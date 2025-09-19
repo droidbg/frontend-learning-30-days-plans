@@ -1,0 +1,17 @@
+{
+  "name": "advance---movies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+ "scripts": {
+  "test": "jest",
+  "test:run": "jest run",
+  "coverage": "jest run --coverage"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.1.3"
+  }
+}

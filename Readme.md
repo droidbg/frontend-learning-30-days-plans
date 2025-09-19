@@ -188,10 +188,10 @@ This document outlines a structured 45-day learning plan for team skill developm
 #### 3. Jest
 
 - **Week 1 (Days 16-20)**
-  - [ ] **Recommended Courses**:
-    - [ ] [Jest Official Documentation](https://jestjs.io/docs/getting-started) (6 hours)
-    - [ ] [JavaScript Testing Introduction](https://testingjavascript.com/) by Kent C. Dodds (8 hours)
-    - [ ] [Jest Crash Course](https://www.youtube.com/watch?v=7r4xVDI2vho) (YouTube - 2 hours)
+  - [x] **Recommended Courses**:
+    - [x] [Jest Official Documentation](https://jestjs.io/docs/getting-started) (6 hours)
+    - [x] [JavaScript Testing Introduction](https://testingjavascript.com/) by Kent C. Dodds (8 hours)
+    - [x] [Jest Crash Course](https://www.youtube.com/watch?v=7r4xVDI2vho) (YouTube - 2 hours)
   - [ ] Write 30 comprehensive unit tests covering edge cases
   - [ ] Implement mocking strategies for APIs, modules, and functions
   - [ ] Setup test coverage reporting with Istanbul
