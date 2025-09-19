@@ -84,19 +84,19 @@ This document outlines a structured 45-day learning plan for team skill developm
   - [x] Learn terminal navigation essentials
   - [x] **Practice**: Git fundamentals with hands-on exercises
 - **Week 2 (Days 6-10)** - _1 hour daily_
-  - [ ] **Intermediate Resources**:
-    - [ ] [Git Branching Strategies](https://www.atlassian.com/git/tutorials/comparing-workflows) (2-3 hours)
-    - [ ] Basic merge conflict resolution (2 hours)
-  - [ ] Perform 2-3 history manipulations (squash, reword commits)
-  - [ ] Resolve 3-5 merge conflicts using terminal
-  - [ ] Create 1-2 custom Git aliases
-  - [ ] **Practice**: Intermediate Git scenarios and merge conflict resolution
+  - [x] **Intermediate Resources**:
+    - [x] [Git Branching Strategies](https://www.atlassian.com/git/tutorials/comparing-workflows) (2-3 hours)
+    - [x] Basic merge conflict resolution (2 hours)
+  - [x] Perform 2-3 history manipulations (squash, reword commits)
+  - [x] Resolve 3-5 merge conflicts using terminal
+  - [x] Create 1-2 custom Git aliases
+  - [x] **Practice**: Intermediate Git scenarios and merge conflict resolution
 - **Week 3 (Days 11-15)** - _1 hour daily_
-  - [ ] Share Git knowledge with 1-2 team members (15-20 minutes each)
-  - [ ] Document basic Git workflow for team
-  - [ ] **Final Demonstration**:
-    - [ ] Demonstrate Git workflow to team
-    - [ ] Complete practical Git challenge
+  - [x] Share Git knowledge with 1-2 team members (15-20 minutes each)
+  - [x] Document basic Git workflow for team
+  - [x] **Final Demonstration**:
+    - [x] Demonstrate Git workflow to team
+    - [x] Complete practical Git challenge
 
 #### 📚 Secondary Skills (Preparation Phase)
 
@@ -131,7 +131,7 @@ This document outlines a structured 45-day learning plan for team skill developm
   - [x] Implement 2 custom helpers (date formatter, conditional helper)
   - [x] **Project**:
     - [x] Build a basic templating system (Simple blog with dynamic content)
-    - [ ] Peer review focusing on template structure
+    - [x] Peer review focusing on template structure
 
 ---
 

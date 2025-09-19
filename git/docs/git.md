@@ -92,3 +92,151 @@ git merge new-branch # merge new branch into main
 
 
 ## Branching Strategies
+
+#### 🔹 Git Flow
+
+- `main` → always stable (production-ready).
+
+- `develop` → for integrating new features.
+
+- `feature/*` → for specific features.
+
+- `release/*` → for preparing a release.
+
+- `hotfix/*` → for urgent bug fixes.
+
+
+##### 🔹 Branch Based Development
+
+- `main` → always deployable.
+
+- Each feature = short-lived branch `(feature-xyz).`
+
+- `PR` → review → merge → deploy.
+
+👉 Simpler, most common in startups.
+
+
+##### 🔹 Trunk-Based Development
+- Work directly on main (or short-lived branches).
+
+- Deploy often (even daily).
+
+- Uses feature flags if needed.
+
+👉 Modern style, very fast-moving teams.
+
+
+
+## Git Merge Conflicts
+
+Conflicts happen when two branches change the same part of a file.
+
+```txt
+<<<<<<< HEAD
+console.log("Hello from main");
+=======
+console.log("Hello from feature");
+>>>>>>> feature
+
+```
+
+Steps: 
+
+1. git checkout main
+2. git merge feature
+3. git push origin main
+
+```bash
+# while merging feature into main
+git merge feature
+# conflict occurs
+git status        # shows conflicted files
+# open file, fix it manually
+git add file.js   # mark as resolved
+git commit        # finalize merge
+
+```
+
+
+## History Manipulation
+Sometimes your Git history looks messy → too many commits like `"fix bug"`, `"oops typo"`.
+We clean it up with interactive rebase.
+
+
+```bash
+git rebase -i HEAD~3 # interactively rebase last 3 commits
+git reset HEAD~1 # undo last commit
+git reset HEAD # undo all changes
+git reset --hard HEAD # undo all changes and discard them
+```
+
+👉 `git reset` is powerful but dangerous. Use with caution.
+
+
+##### 🔹 Squash Commits
+
+You can combine multiple commits into one.
+
+```bash
+git rebase -i HEAD~3 # interactively rebase last 3 commits
+```
+- `pick` = keep commit
+
+- `squash` = merge into previous commit
+
+Example of picking and squashing commits:
+
+```bash
+git rebase -i HEAD~3
+pick 1234567890
+squash 1234567891
+squash 1234567892
+```
+
+##### 🔹 Reword Commits
+
+- `reword` = change commit message
+
+Example of rewording commits:
+
+```bash
+git rebase -i HEAD~3
+reword 1234567890
+pick 1234567891
+pick 1234567892
+```
+
+Example of deleting commits:
+
+```bash
+git rebase -i HEAD~3
+delete 1234567890 # delete commit
+pick 1234567891
+pick 1234567892
+```
+
+
+## Git Aliases
+Git aliases are shortcuts for Git commands. It's like creating your own commands.
+
+```bash
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.lg "log --pretty=format:'%C(bold blue)%h%Creset - %C(italic green)(%cr) %C(bold yellow)%d%Creset %s %Creset%C(cyan)<%an>%Creset %C(#ff6f61)<%ae>%Creset' --abbrev-commit --date=relative"
+
+```
+ 
+
+Example of using aliases:
+```bash
+git co # checkout
+git br # branch
+git ci # commit
+git st # status
+git lg # log
+```
+
+ 
