@@ -265,3 +265,80 @@ npm run test:watchAll
 If you type **`t addMovie`**, Jest will run only tests with "addMovie" in the name.
 
  
+
+ ### 📌 Performance Optimization
+ 
+Normally Jest is fast enough, but in large projects (hundreds/thousands of tests) it can slow down.
+##### Optimizing helps:
+
+- Speed up feedback loop
+
+- Reduce CI build time
+
+- Handle heavy integration/UI tests
+
+##### Common Performance Bottlenecks
+
+- Too many unnecessary tests running → optimize with --watch.
+
+- Slow setup/teardown → avoid reinitializing databases/servers for each test.
+
+- Large mock data → move into shared fixtures.
+
+- Snapshots → only update when meaningful.
+ 
+ 
+#### Optimization Techniques
+##### ✅ Run Tests in Parallel (Default)
+
+Jest runs tests in parallel workers.
+You can tune it with:
+```bash
+npx jest --maxWorkers=50%
+```
+
+👉 Uses 50% of CPU cores instead of all → balances speed & system load.
+ 
+##### ✅ Use --runInBand for Integration Tests
+
+Some tests (like DB or API) can’t run in parallel (they conflict).
+
+```bash
+npx jest --runInBand
+```
+
+
+👉 Runs tests sequentially.
+
+
+##### ✅ Cache Test Results
+
+Jest caches results → use --cache to reuse.
+
+```bash
+npx jest --cache
+```
+
+##### ✅ Selective Test Runs
+
+Run only changed files with Git:
+
+```bash
+npx jest --onlyChanged
+```
+
+
+Run specific file:
+
+```bash
+npx jest movies.test.js
+```
+
+
+Run specific test name:
+
+```bash
+npx jest -t "addMovie"
+```
+
+ 
