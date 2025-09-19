@@ -22,7 +22,7 @@ This document outlines a structured 45-day learning plan for team skill developm
 | Nx                                | -                                                                     | -                                                                      | Setup workspace with 2-3 applications, basic shared libraries            |
 | Different types of tests          | -                                                                     | -                                                                      | Unit, functional, visual, accessibility, data-driven tests               |
 | Git & Terminal                    | Master 8-10 Git commands, basic rebasing, terminal navigation         | Intermediate Git workflows                                             | Advanced Git usage and team sharing                                      |
-| Authentication (Connect & IDMS)   | -                                                                     | Study  Connect flow, implement IDMS integration                   | Production-ready auth system                                             |
+| Authentication (Connect & IDS)   | -                                                                     | Study  Connect flow, implement IDS integration                   | Production-ready auth system                                             |
 | Different types of reporters      | Understand Playwright reporting capabilities                          | Strong understanding in content test framework                         | Drive changes on content framework                                       |
 | Terminal & Shell Scripting        | -                                                                     | Write 3-5 automation scripts, learn key commands                       | Automate 2-3 repetitive team processes                                   |
 | Docker                            | -                                                                     | -                                                                      | Create Dockerfiles for 2-3 applications, basic containerization          |
@@ -215,9 +215,9 @@ This document outlines a structured 45-day learning plan for team skill developm
 
 - **Week 1 (Days 16-20)**
   - [ ] **Recommended Courses**:
-    - [ ] [ Developer Authentication](https://developer.com/documentation/) (Official docs - 4 hours)
+    - [ ] Developer Authentication (Official docs - 4 hours)
   - [ ] Study Connect authentication flow
-  - [ ] Implement basic IDMS integration
+  - [ ] Implement basic authentication integration
   - [ ] Create authentication middleware
   - [ ] **Project**: Implement secure login flow with security best practices
 - **Week 2 (Days 21-25)**
