@@ -131,3 +131,126 @@ done
  
  - Always give execute permission for shell scripts.
  
+
+
+### Error Handling in Bash
+
+```bash
+#!/bin/bash
+set -e # exit on error
+set -u # exit on undefined variable
+set -o pipefail # exit on pipe failure
+```
+In real life, scripts fail (missing files, permissions, network issues). We add error handling so the script doesn’t silently break.
+
+ Example: Safe File Deletion
+ ```bash 
+ #!/bin/bash
+set -e  # exit on first error
+
+FILE=$1
+
+if [ -z "$FILE" ]; then
+  echo "❌ Error: No file specified."
+  exit 1
+fi
+
+if [ ! -f "$FILE" ]; then
+  echo "❌ Error: File $FILE does not exist."
+  exit 1
+fi
+
+rm "$FILE"
+echo "✅ Deleted $FILE successfully."
+
+ ```
+
+- `set -e` → exits if any command fails
+
+- `exit 1` → returns error code (good for CI/CD pipelines)
+
+#### Deployment Automation Script
+
+
+```bash 
+#!/bin/bash
+set -e
+
+APP_DIR="/home/user/myapp"
+REPO="git@github.com:user/myapp.git"
+
+echo "🚀 Starting deployment..."
+
+# Step 1: Clone or update repo
+if [ -d "$APP_DIR" ]; then
+  echo "📂 Updating existing project..."
+  cd "$APP_DIR"
+  git pull origin main
+else
+  echo "📂 Cloning project..."
+  git clone "$REPO" "$APP_DIR"
+  cd "$APP_DIR"
+fi
+
+# Step 2: Install dependencies
+echo "📦 Installing dependencies..."
+npm install
+
+# Step 3: Run tests
+echo "🧪 Running tests..."
+npm test
+
+echo "✅ Deployment completed successfully!"
+
+ ```
+👉 This script:
+
+1. Updates repo (or clones first time)
+
+2. Installs dependencies
+
+3. Runs tests
+ 
+ ### Logging
+
+  ```bash 
+echo "📝 Logging..."
+LOGFILE="/var/log/deploy.log"
+exec > >(tee -i $LOGFILE)
+exec 2>&1
+```
+- `tee` → writes output both to terminal and log file
+
+- `exec > >(tee -i $LOGFILE)` → writes output both to terminal and log file
+
+- `exec 2>&1` → writes errors to log file
+
+Now every echo/error is saved into `deploy.log`
+
+ 
+ ## Interactive Menu
+ 
+
+  ```bash 
+#!/bin/bash
+echo "📝 Interactive Menu"
+echo "1. Deploy"
+echo "2. Undeploy"
+echo "3. Exit"
+read -p "Enter your choice: " choice
+case $choice in
+  1) echo "Deploying..." ;;
+  2) echo "Undeploying..." ;;
+  3) echo "Exiting..." ;;
+  *) echo "Invalid choice" ;;
+esac
+ ```
+ 
+
+  ```bash 
+ ```
+ 
+
+  ```bash 
+ ```
+ 

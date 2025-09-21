@@ -207,7 +207,7 @@ This document outlines a structured 45-day learning plan for team skill developm
   - [x] **Project**: Integration test suite with custom matchers
 - **Week 3 (Days 26-30)**
   - [x] **Performance Resources**:
-    - [ ] [Jest Performance Optimization](https://jestjs.io/docs/troubleshooting) (2 hours)
+    - [x] [Jest Performance Optimization](https://jestjs.io/docs/troubleshooting) (2 hours)
   - [x] **Final Project**:
     - [x] Achieve good code coverage on assigned codebase
     - [x] Jest competency demonstration (Peer review of testing strategy)
@@ -231,24 +231,24 @@ This document outlines a structured 45-day learning plan for team skill developm
 #### 5. Terminal & Shell Scripting
 
 - **Week 1 (Days 16-20)**
-  - [ ] **Recommended Courses**:
-    - [ ] [Bash Scripting Tutorial](https://www.shellscript.sh/) (8 hours)
+  - [x] **Recommended Courses**:
+    - [x] [Bash Scripting Tutorial](https://www.shellscript.sh/) (8 hours)
     - [ ] [Linux Command Line Basics](https://www.udacity.com/course/linux-command-line-basics--ud595) (Udacity - 4 hours)
     - [ ] [Advanced Bash Scripting Guide](https://tldp.org/LDP/abs/html/) (Selected chapters - 6 hours)
-  - [ ] Write 10 automation scripts
-  - [ ] Master advanced shell commands
-  - [ ] Create custom terminal functions
-  - [ ] **Project**: Shell scripting fundamentals (Create system administration scripts)
+  - [x] Write 10 automation scripts
+  - [x] Master advanced shell commands
+  - [x] Create custom terminal functions
+  - [x] **Project**: Shell scripting fundamentals (Create system administration scripts)
 - **Week 2 (Days 21-25)**
-  - [ ] **Advanced Resources**:
-    - [ ] [Shell Scripting Best Practices](https://google.github.io/styleguide/shellguide.html) (Google Style Guide - 2 hours)
-    - [ ] [Error Handling in Bash](https://www.gnu.org/software/bash/manual/bash.html#The-Set-Builtin) (3 hours)
-  - [ ] Build deployment automation scripts
-  - [ ] Implement error handling and logging
-  - [ ] Create interactive shell menus
-  - [ ] **Project**: Advanced scripting (CI/CD deployment script)
+  - [x] **Advanced Resources**:
+    - [x] [Shell Scripting Best Practices](https://google.github.io/styleguide/shellguide.html) (Google Style Guide - 2 hours)
+    - [x] [Error Handling in Bash](https://www.gnu.org/software/bash/manual/bash.html#The-Set-Builtin) (3 hours)
+  - [x] Build deployment automation scripts
+  - [x] Implement error handling and logging
+  - [x] Create interactive shell menus
+  - [x] **Project**: Advanced scripting (CI/CD deployment script)
 - **Week 3 (Days 26-30)**
-  - [ ] **Final Project**: Automate 3-5 repetitive team processes with documented time savings
+  - [x] **Final Project**: Automate 3-5 repetitive team processes with documented time savings
 
 #### 6. ESLint Configuration
 
