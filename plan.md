@@ -1,4 +1,4 @@
-# Team Skill Upgrade Learning Plan
+# Skill Upgrade Learning Plan
 
 ## Overview
 
