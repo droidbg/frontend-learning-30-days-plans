@@ -1,0 +1,3 @@
+[submodule "the-ts-files"]
+	path = the-ts-files
+	url = git@github.com:droidbg/the-ts-files.git
