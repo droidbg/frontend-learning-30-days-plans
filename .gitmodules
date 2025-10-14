@@ -1,3 +1,15 @@
 [submodule "the-ts-files"]
 	path = the-ts-files
 	url = git@github.com:droidbg/the-ts-files.git
+[submodule "the-playwright"]
+	path = the-playwright
+	url = git@github.com:droidbg/the-playwand.git
+[submodule "the-handlebar"]
+	path = the-handlebar
+	url = git@github.com:droidbg/handlebar-of-secrets.git
+[submodule "the-react"]
+	path = the-react
+	url = git@github.com:droidbg/reacto-patronum.git
+[submodule "the-next"]
+	path = the-next
+	url = git@github.com:droidbg/nexto-patronum.git
