@@ -215,26 +215,26 @@ This document outlines a structured 45-day learning plan for team skill developm
 #### 4. Authentication Systems
 
 - **Week 1 (Days 16-20)**
-  - [ ] **Recommended Courses**:
-    - [ ] Developer Authentication (Official docs - 4 hours)
-  - [ ] Study Connect authentication flow
-  - [ ] Implement basic authentication integration
-  - [ ] Create authentication middleware
-  - [ ] **Project**: Implement secure login flow with security best practices
+  - [x] **Recommended Courses**:
+    - [x] Developer Authentication (Official docs - 4 hours)
+  - [x] Study Connect authentication flow
+  - [x] Implement basic authentication integration
+  - [x] Create authentication middleware
+  - [x] **Project**: Implement secure login flow with security best practices
 - **Week 2 (Days 21-25)**
-  - [ ] Build secure token management system
-  - [ ] Implement role-based access control
-  - [ ] Create authentication testing suite
+  - [x] Build secure token management system
+  - [x] Implement role-based access control
+  - [x] Create authentication testing suite
 - **Week 3 (Days 26-30)**
-  - [ ] **Milestone**: Deploy production-ready auth system
+  - [x] **Milestone**: Deploy production-ready auth system
 
 #### 5. Terminal & Shell Scripting
 
 - **Week 1 (Days 16-20)**
   - [x] **Recommended Courses**:
     - [x] [Bash Scripting Tutorial](https://www.shellscript.sh/) (8 hours)
-    - [ ] [Linux Command Line Basics](https://www.udacity.com/course/linux-command-line-basics--ud595) (Udacity - 4 hours)
-    - [ ] [Advanced Bash Scripting Guide](https://tldp.org/LDP/abs/html/) (Selected chapters - 6 hours)
+    - [x] [Linux Command Line Basics](https://www.udacity.com/course/linux-command-line-basics--ud595) (Udacity - 4 hours)
+    - [x] [Advanced Bash Scripting Guide](https://tldp.org/LDP/abs/html/) (Selected chapters - 6 hours)
   - [x] Write 10 automation scripts
   - [x] Master advanced shell commands
   - [x] Create custom terminal functions
